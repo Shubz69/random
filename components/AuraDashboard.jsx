@@ -97,7 +97,7 @@ export default function AuraDashboard() {
                   const heights = [
                     36, 42, 28, 48, 52, 46, 38, 58, 44, 62, 54, 70, 60, 50, 80,
                     66, 48, 56, 74, 68, 88, 78, 72, 98, 90, 84, 110, 118, 100,
-                    122, 108, 96, 126, 116,
+                    122, 108, 96, 126, 116
                   ];
                   const h = heights[i];
                   return (
@@ -159,15 +159,7 @@ export default function AuraDashboard() {
   );
 }
 
-function MarketRow({
-  pair,
-  value,
-  tone,
-}: {
-  pair: string;
-  value: string;
-  tone: "up" | "down";
-}) {
+function MarketRow({ pair, value, tone }) {
   return (
     <div className="aura-market-row">
       <div className="aura-market-left">
@@ -179,15 +171,7 @@ function MarketRow({
   );
 }
 
-function StatCard({
-  label,
-  value,
-  accent,
-}: {
-  label: string;
-  value: string;
-  accent: "blue" | "gold" | "cyan";
-}) {
+function StatCard({ label, value, accent }) {
   return (
     <div className="aura-stat-card">
       <div className="aura-stat-label">{label}</div>
@@ -229,5 +213,5 @@ const candles = [
   { x: 768, open: 374, close: 408, high: 352, low: 422, up: false },
   { x: 794, open: 410, close: 446, high: 384, low: 462, up: false },
   { x: 820, open: 448, close: 422, high: 404, low: 470, up: true },
-  { x: 846, open: 424, close: 452, high: 406, low: 468, up: false },
+  { x: 846, open: 424, close: 452, high: 406, low: 468, up: false }
 ];
